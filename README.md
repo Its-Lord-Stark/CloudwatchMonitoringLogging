@@ -1,4 +1,4 @@
-# AWS CloudWatch Logging and Monitoring
+![CloudwatchAgentInstalled](https://github.com/Its-Lord-Stark/CloudwatchMonitoringLogging/assets/126385754/70db5a94-2c89-4b0a-a481-ec3c65d33521)# AWS CloudWatch Logging and Monitoring
 
 This project demonstrates how to set up AWS CloudWatch logging and monitoring using an EC2 instance and various AWS services.
 
@@ -13,12 +13,12 @@ The project involves setting up a Linux EC2 instance, installing the AWS CloudWa
 
 2. **Install AWS CloudWatch Agent**: Install the AWS CloudWatch agent on the EC2 instance. You can find installation instructions [here](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-commandline-fleet.html).
 
-   ![CloudwatchAgentInstalled](https://github.com/Its-Lord-Stark/CloudwatchLoggingMonitoring/assets/126385754/b0da5886-3457-4787-9767-4361784f62fe)
+![CloudwatchAgentInstalled](https://github.com/Its-Lord-Stark/CloudwatchMonitoringLogging/assets/126385754/75a4a3ea-04dc-4380-ba89-3693677f485e)
 
 
 4. **Create Logging Group**: In the CloudWatch console, navigate to the "Log groups" section and create a new log group for the EC2 instance.
 
-   ![Logfile](https://github.com/Its-Lord-Stark/CloudwatchLoggingMonitoring/assets/126385754/b514c2bd-8ede-48f0-956f-3e5f03f0fce6)
+![Logfile](https://github.com/Its-Lord-Stark/CloudwatchMonitoringLogging/assets/126385754/19aeb036-e67d-4d73-9218-5cee1a7b0ec7)
 
 
 6. **Define Log Stream**: Within the created log group, define a log stream to receive logs from the EC2 instance.
@@ -27,26 +27,20 @@ The project involves setting up a Linux EC2 instance, installing the AWS CloudWa
 
 8. **Define Custom Namespace and Metrics**: In the CloudWatch Metrics section, define a custom namespace and metrics based on the logs received from the EC2 instance.
 
-![CretingAlarm](https://github.com/Its-Lord-Stark/CloudwatchLoggingMonitoring/assets/126385754/c9e6c5a6-d29e-44b1-a30f-8dc222e34faf)
-
-
-
 
 9. **Create Alarm**: Set up an alarm based on the custom metrics. Define conditions such as receiving three matches to the "error" filter within 30 seconds.
-![AlarmPage](https://github.com/Its-Lord-Stark/CloudwatchLoggingMonitoring/assets/126385754/5e4682ee-b456-42b6-8c38-51a66b3d0357)
 
-   
-![AlarmDetails](https://github.com/Its-Lord-Stark/CloudwatchLoggingMonitoring/assets/126385754/ac7c85ec-e123-4d95-b58b-0f9866e4b85a)
+   ![AlarmPage](https://github.com/Its-Lord-Stark/CloudwatchMonitoringLogging/assets/126385754/14fec3e9-5700-4ffd-bd91-41cac61ad759)
 
+![AlarmDetails](https://github.com/Its-Lord-Stark/CloudwatchMonitoringLogging/assets/126385754/d5c3dc44-1e52-4cea-9add-bb9f425d0163)
 
 
 10. **SNS Topic and Email**:
 
-    
-![NewSNSTopic](https://github.com/Its-Lord-Stark/CloudwatchLoggingMonitoring/assets/126385754/f128d2e4-1d1c-46c4-8d34-8530be5c5806)
+![NewSNSTopic](https://github.com/Its-Lord-Stark/CloudwatchMonitoringLogging/assets/126385754/19aaafea-4ebf-4795-acfa-960571813820)
 
-![SNSEmail](https://github.com/Its-Lord-Stark/CloudwatchLoggingMonitoring/assets/126385754/25a6528a-3e6a-441f-9f28-9960df0d5025)
 
+![SNSEmail](https://github.com/Its-Lord-Stark/CloudwatchMonitoringLogging/assets/126385754/88d8d60f-1424-448f-8122-4ca25c3bd221)
 
 
 
